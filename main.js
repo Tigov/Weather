@@ -21,7 +21,7 @@ async function getData() {
         return;
     }
 
-    drawPic(data.name); //Get the picture of the location that was entered
+    await drawPic(data.name); //Get the picture of the location that was entered
 
     //Change the text to show the temperature and description
     content.textContent = `The temperature in ${data.name} is ${Math.round(parseFloat(data.main.temp) - 273.15)}°C 
